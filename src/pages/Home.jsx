@@ -4,6 +4,8 @@ import { ChevronRight } from 'lucide-react';
 import Navigation from '../components/navigation/Navigation';
 import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
+import Projects from '../components/projects/Projects';
+
 
 
 // Import other components here (Hero, About, Projects, Skills, Contact)
@@ -26,6 +28,7 @@ const Home = () => {
         >
           {currentSection === 'hero' && <Hero />}
           {currentSection === 'about' && <About />}
+          {currentSection === 'projects' && <Projects />}
         </motion.div>
       </AnimatePresence>
 
