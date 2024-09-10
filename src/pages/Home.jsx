@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import Navigation from '../components/navigation/Navigation';
 import Hero from '../components/hero/Hero';
+import About from '../components/about/About';
 
 
 // Import other components here (Hero, About, Projects, Skills, Contact)
@@ -24,6 +25,7 @@ const Home = () => {
           transition={{ type: 'tween', duration: 0.5 }}
         >
           {currentSection === 'hero' && <Hero />}
+          {currentSection === 'about' && <About />}
         </motion.div>
       </AnimatePresence>
 
