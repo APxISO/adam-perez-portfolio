@@ -6,6 +6,8 @@ import Hero from '../components/hero/Hero';
 import About from '../components/about/About';
 import Projects from '../components/projects/Projects';
 import Skills from '../components/skills/Skills';
+import Contact from '../components/contact/Contact';
+
 
 
 
@@ -32,6 +34,8 @@ const Home = () => {
           {currentSection === 'about' && <About />}
           {currentSection === 'projects' && <Projects />}
           {currentSection === 'skills' && <Skills />}
+          {currentSection === 'contact' && <Contact />}
+
 
         </motion.div>
       </AnimatePresence>
